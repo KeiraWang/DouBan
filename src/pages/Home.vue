@@ -1,12 +1,10 @@
 <template>
     <div class="_home">
-        <router-link-home></router-link-home>
-        <!-- <div class="line"></div> -->
+        <router-link-home class="header"></router-link-home>
         <router-link-second></router-link-second>
         <!-- <div>{{arrhomedata}}</div> -->
         <home-data></home-data>
 
-        <!-- <em>home</em>   -->
         <router-link-nav></router-link-nav>
         <!-- <ww></ww> -->
         <!-- <sliderfu :sliderfuprops="arr"></sliderfu> -->
@@ -55,13 +53,7 @@ export default {
             console.log(data);
             this.arr=data.data.data;
         });
-        // this.axios({
-        //     method:"get",
-        //     url:"/homedata"
-        // }).then((data)=>{
-        //     console.log(data);
-        //     this.arrhomedata=data;
-        // });
+   
     },
     computed:{
         arra(){
@@ -87,7 +79,14 @@ export default {
     ._home{
         padding:0 0.2rem;
         box-sizing:border-box;
+        margin-top:0.75rem;
     }
+    /* .header{
+        position:fixed;
+        top:0;
+        left:0;
+        background:white;
+    } */
     /* .line{
         width:100%;
         height:0.01rem;

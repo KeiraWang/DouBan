@@ -1,6 +1,6 @@
 <template>
     <div>
-        RegisterDouBan
+        电影详情
     </div>
 </template>
 <script>

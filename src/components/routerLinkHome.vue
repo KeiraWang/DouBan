@@ -1,16 +1,18 @@
 <template>
+<!-- <div class="_header"> -->
     <div class="header"> 
        <div class="left">
-             <router-link to="/homedouban" class="hdb">豆瓣</router-link>
+             <router-link to="/home"><img class="hdb" src="../../static/img/doubanban.png" alt=""></router-link>
        </div>
-      <div class="right">
+     <div class="right">
           <router-link to="/movie" class="mov">电影</router-link>
-          <router-link to="/book " class="bo">图书</router-link>
+          <router-link to="/book" class="bo">图书</router-link>
           <router-link to="/radio" class="rad">广播</router-link>
           <router-link to="/group" class="gro">小组</router-link>
-          <router-link to="/tubiao" class="tb">图标</router-link>
+          <router-link to="/tubiao"><img class="tb" src="../../static/img/search.png" alt=""></router-link>
       </div>
     </div>
+    <!-- </div> -->
 </template>
 <script>
 export default {
@@ -18,13 +20,21 @@ export default {
 }
 </script>
 <style lang="" scoped>
+     /* ._header{
+          overflow:hidden;
+     } */
      .header{
           width:100%;
           height:0.5rem;
-          /* background:red; */
           display:flex;
           justify-content:space-between;
-          border-bottom:0.01rem solid black;
+          border-bottom:0.01rem solid gray;
+          padding:0 0.2rem;
+          box-sizing:border-box;
+          position:fixed;
+          top:0;
+          left:0;
+          background:white;
      }
      .left{
           font-size:0.24rem;
@@ -39,8 +49,12 @@ export default {
           margin-right:0.1rem;
           font-size:0.16rem;
      }
-    .hdb{
+    /* .hdb{
         color:rgb(5,181,18);
+    } */
+    .hdb{
+         width:0.4rem;
+          height:0.2rem;
     }
    .mov{
         color:rgb(66,189,86);
@@ -55,6 +69,7 @@ export default {
         color:rgb(42,184,204);
    }
    .tb{
-        color:rgb(5,181,18);
+        width:0.3rem;
+          height:0.2rem;
    }
 </style>

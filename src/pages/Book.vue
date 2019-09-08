@@ -1,6 +1,6 @@
 <template>
     <div>
-        book
+        图书
     </div>
 </template>
 <script>

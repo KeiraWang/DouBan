@@ -11,6 +11,9 @@ export default {
 <style lang="" scoped>
     div{
         text-align:center;
+        
+    }
+    a{
         color:green;
     }
 </style>

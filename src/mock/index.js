@@ -4,3 +4,9 @@ const Mock=require('mockjs');
 Mock.mock("/xiaoming/xiaohong","get",require("./json/haha"));
 Mock.mock("/hehe","post",require("./json/keke"));
 Mock.mock("/homedata","get",require("./json/homeData"));
+Mock.mock("/moviedata","get",require("./json/movieData"));
+Mock.mock("/findgoodmoviedata","get",require("./json/findGoodMovieData"));
+Mock.mock("/bendimoviedata","get",require("./json/bendimoviedata"));
+
+
+

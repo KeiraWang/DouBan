@@ -1,15 +1,18 @@
 <template>
-    <div>
+    <div class="_header">
         <!-- Login -->
-        <span @click="fun()" class="cancel">取消</span>
-        <h3>登录豆瓣</h3>
-        <input type="email" placeholder="     邮箱" v-model="textEmail">
+        <div class="header">
+            <!-- <span @click="fun()" class="cancel">取消</span> -->
+            <router-link  to="/home" class="cancel">取消</router-link>
+            <h3>登录豆瓣</h3>
+        </div>
+        <input type="email" placeholder="邮箱" v-model="textEmail" autofocus="true">
         <div class="tokenDiv1" v-if="bool">
-            <input type="password" placeholder="     Token"  v-model="textPass" >
+            <input type="password" placeholder="Token"  v-model="textPass" >
             <span class="token1" @click="bool=false"></span>
         </div>
         <div class="tokenDiv2" v-else>
-            <input type="text" placeholder="     Token"  v-model="textPass" >
+            <input type="text" placeholder="Token"  v-model="textPass" >
             <span class="token2" @click="bool=true"></span>
         </div>
         
@@ -31,30 +34,30 @@ export default {
         }  
     },
     methods:{
-        fun(){
-            this.$router.go(-1);
-        },
+        // fun(){
+        //     this.$router.go(-1);
+        // },
         funlog(){
-            var param=new URLSearchParams();
-            param.append("textEmail",this.textEmail);
-            param.append("textPass",this.textPass);
-            this.axios({
-                method:"post",
-                // url:"http://localhost:3000/login",
-                url:"/apis/login",
-                data:param
-            }).then((success)=>{
-                // console.log(success);
-                if(success.data.linkId==1){
-                    window.localStorage.setItem("newToken",success.data.newToken);
-                    alert("登录成功");
-                    window.location.href="/home";//跳转地址有问题
-                }else if(success.data.linkId==2){
-                    alert("邮箱或者密码错误，请重新输入");
-                }else{
-                    alert("连接超时，请稍后重试");
-                }
-            });  
+            // var param=new URLSearchParams();
+            // param.append("textEmail",this.textEmail);
+            // param.append("textPass",this.textPass);
+            // this.axios({
+            //     method:"post",
+            //     // url:"http://localhost:3000/login",
+            //     url:"/apis/login",
+            //     data:param
+            // }).then((success)=>{
+            //     // console.log(success);
+            //     if(success.data.linkId==1){
+            //         window.localStorage.setItem("newToken",success.data.newToken);
+            //         alert("登录成功");
+            //         window.location.href="/home";//跳转地址有问题
+            //     }else if(success.data.linkId==2){
+            //         alert("邮箱或者密码错误，请重新输入");
+            //     }else{
+            //         alert("连接超时，请稍后重试");
+            //     }
+            // });  
         }
     }
 }
@@ -71,6 +74,7 @@ export default {
         outline:none;
         width:3.2rem;
         height:0.5rem;
+        padding-left:0.1rem;
     }
     .tokenDiv1{
         position:relative;
@@ -109,8 +113,17 @@ export default {
         font-size:0.25rem;
         color:white;
     }
-    div{
+    ._header{
         text-align:center;
+    }
+    .header{
         position:relative;
+        border-bottom:0.01rem solid gray;
+        margin-bottom:0.4rem;
+    }
+    .cancel{
+        position:absolute;
+        top:0;
+        left:0.3rem;
     }
 </style>

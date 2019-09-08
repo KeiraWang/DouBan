@@ -11,7 +11,6 @@ import  Home from '../pages/Home';
 import  DownLoadApp from '../pages/DownLoadApp';
 import  FindPass from '../pages/FindPass';
 import  OtherLoginMethods from '../pages/OtherLoginMethods';
-import  RegisterDouBan from '../pages/RegisterDouBan';
 import  LoginNew from '../pages/LoginNew';
 import  RegisterNew from '../pages/RegisterNew';
 import  Movie from '../pages/Movie';
@@ -22,10 +21,40 @@ import  HomeDouBan from '../pages/HomeDouBan';
 import  TuBiao from '../pages/TuBiao';
 import  YingYuanReYing from '../pages/YingYuanReYing';
 import  OuMeiXinDieBang from '../pages/OuMeiXinDieBang';
+import  Classic from '../pages/Classic';
+import  lengmenjiapian from '../pages/lengmenjiapian';
+import  GoToAppStoreDownLoadIOS from '../pages/GoToAppStoreDownLoadIOS';
+import  MovieDetail from '../pages/MovieDetail';
+import  UserInfor from '../pages/UserInfor';
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/userinfor',//当路径为哪个的时候
+      name: 'UserInfor',//给当前路由起个名字
+      component: UserInfor//调用的组件
+    },
+    {
+      path: '/moviedetail',//当路径为哪个的时候
+      name: 'MovieDetail',//给当前路由起个名字
+      component: MovieDetail//调用的组件
+    },
+    {
+      path: '/gotoappstoredownloadios',//当路径为哪个的时候
+      name: 'GoToAppStoreDownLoadIOS',//给当前路由起个名字
+      component: GoToAppStoreDownLoadIOS//调用的组件
+    },
+    {
+      path: '/lengmenjiapian',//当路径为哪个的时候
+      name: 'lengmenjiapian',//给当前路由起个名字
+      component: lengmenjiapian//调用的组件
+    },
+    {
+      path: '/classic',//当路径为哪个的时候
+      name: 'Classic',//给当前路由起个名字
+      component: Classic//调用的组件
+    },
     {
       path: '/cateyemovie',//当路径为哪个的时候
       name: 'CatEyeMovie',//给当前路由起个名字
@@ -70,11 +99,6 @@ export default new Router({
       path: '/otherloginmethods',
       name: 'OtherLoginMethods',
       component: OtherLoginMethods
-    },
-    {
-      path: '/registerdouban',
-      name: 'RegisterDouBan',
-      component: RegisterDouBan
     },
     {
       path: '/loginnew',
