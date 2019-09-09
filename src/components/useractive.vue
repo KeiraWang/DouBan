@@ -1,6 +1,6 @@
 <template>
     <div class="_useractive">
-        <div>
+        <div class="aa">
             <router-link to="/userinfor"><img class="user" src="../../static/img/xiazai.png" alt=""></router-link>
             <router-link class="pleaselog" to="/loginnew">请先登录</router-link>
         </div>
@@ -26,6 +26,12 @@ export default {
 }
 </script>
 <style lang="" scoped>
+.aa a{
+    float: left;
+}
+.aa a:nth-of-type(2){
+    line-height: 0.5rem;
+}
     ._useractive{
         display:flex;
         justify-content:space-between;
@@ -33,6 +39,7 @@ export default {
         box-sizing:border-box;
         margin-top:0.15rem;
         margin-bottom:0.15rem;
+        font-size:0;
     }
     .user{
         width:0.5rem;
@@ -50,6 +57,8 @@ export default {
     .pleaselog{
         color:gray;
         margin-left:0.1rem;
+        font-size:0.16rem;
+        vertical-align:middle;
     }
     input{
         width:0.5rem;

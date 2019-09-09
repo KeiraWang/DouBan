@@ -51,11 +51,13 @@ export default {
     }
     .top{
         width:100%;
-        display:flex;
+        display:flex;   
+        font-size: 0.16rem;
     }
     dl{
         width:65%;
         margin-right:10%;
+     
     }
     dd{
         margin-top:0.2rem;
@@ -67,5 +69,6 @@ export default {
     .bot{
         display:flex;
         justify-content: space-between;
+        font-size: 0.10rem;
     }
 </style>

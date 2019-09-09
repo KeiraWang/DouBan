@@ -44,6 +44,7 @@ export default {
      .right{
           /* margin-right:0.16rem; */
           line-height:0.5rem;
+          font-size: 0px;
      }
      .right>a{
           margin-right:0.1rem;

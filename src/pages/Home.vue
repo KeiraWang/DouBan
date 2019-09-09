@@ -81,15 +81,4 @@ export default {
         box-sizing:border-box;
         margin-top:0.75rem;
     }
-    /* .header{
-        position:fixed;
-        top:0;
-        left:0;
-        background:white;
-    } */
-    /* .line{
-        width:100%;
-        height:0.01rem;
-        border-bottom:0.01rem solid black;
-    } */
 </style>

@@ -149,6 +149,10 @@ export default new Router({
       path: '/oumeixindiebang',
       name: 'OuMeiXinDieBang',
       component: OuMeiXinDieBang
+    },
+    {
+      path: '/*',
+      redirect:"/home"
     }
   ]
 });

@@ -28,9 +28,17 @@ export default {
 }
 </script>
 <style lang="" scoped>
+    div{
+        font-size:0;
+        margin-top:0.3rem;
+    }
+    span{
+        font-size: 0.16rem;
+    }
     ul{
         display:flex;
         flex-wrap:wrap;
+        font-size:0.16rem;
     }
     li{
        list-style:none; 
@@ -40,6 +48,7 @@ export default {
        padding:0.1rem;
         display:flex;
         justify-content: space-between;
+        box-sizing:border-box;
     }
     li:nth-child(odd){
         border-left:none;

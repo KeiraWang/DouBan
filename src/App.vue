@@ -19,4 +19,8 @@ export default {
   html{
     font-size:26.67vw;
   }
+  .el-rate .el-rate__icon {
+    font-size: 5px;
+    margin-right: 0px;
+}
 </style>

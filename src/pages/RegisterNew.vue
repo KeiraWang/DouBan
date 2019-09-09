@@ -1,16 +1,16 @@
 <template>
     <div>
         <h1>欢迎加入豆瓣</h1>
-        <input type="email" placeholder="     邮箱" v-model="textEmail">
+        <input type="email" placeholder="邮箱" v-model="textEmail" autofocus="true">
         <div class="tokenDiv1" v-if="bool">
-            <input type="text" placeholder="     Token" v-model="textPass">
+            <input type="text" placeholder="Token" v-model="textPass">
             <span class="token1" @click="bool=false"></span>
         </div>
          <div class="tokenDiv2" v-else>
-            <input type="password" placeholder="     Token" v-model="textPass">
+            <input type="password" placeholder="Token" v-model="textPass">
             <span class="token2" @click="bool=true"></span>
         </div>
-        <input type="text" placeholder="    用户名" v-model="textName">
+        <input type="text" placeholder="用户名" v-model="textName">
         <button @click="fun()">立即注册</button>
         <span>点击「注册」代表你已阅读并同意用户使用协议</span>
         <down></down>
@@ -71,6 +71,7 @@ export default {
         outline:none;
         width:3.2rem;
         height:0.5rem;
+        padding-left:0.1rem;
     }
      .tokenDiv1{
         position:relative;

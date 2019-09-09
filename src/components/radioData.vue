@@ -52,6 +52,7 @@ export default {
         border-bottom:0.01rem solid gray;
         padding-top:0.2rem;
         padding-bottom:0.2rem;
+        font-size: 0.16rem;
     }
     .dadou{
         margin-right:0.3rem;
@@ -64,12 +65,18 @@ export default {
     .douban{
         display:inline-block;
         font-weight:800;
+        font-weight:0.32rem;
     }
     .write{
         font-size:0.18rem;
     }
+    p{
+        font-size:0.16rem;
+    }
+
     dl{
         /* border:0.01rem solid gray; */
+        font-size:0.16rem;
     }
     .zan,.pinglun,.buzhidao,.more{
         width:0.3rem;
@@ -78,5 +85,8 @@ export default {
     .other{
         display:flex;
         justify-content:space-between;
+    }
+    .other>span{
+        font-size:0.16rem;
     }
 </style>

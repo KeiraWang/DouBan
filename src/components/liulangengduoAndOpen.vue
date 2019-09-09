@@ -21,11 +21,11 @@ export default {
         background:url(../../static/img/promotion_bg.b7abee9.jpg);
         display:flex;
         justify-content: space-between;
-        padding-left:0.4rem;
+        padding-left:0.2rem;
         padding-right:0.2rem;
         padding-top:0.3rem;
         box-sizing:border-box;
-        /* line-height:0.8rem; */
+        font-size:0;
     }
     .openapp>a{
         color:green;
@@ -42,10 +42,14 @@ export default {
         background:green;
         width:0.8rem;
         color:white;
+        margin-right:0.1rem;
     }
     .open_a{
         width:0.4rem;
         border:0.01rem solid green;
         color:green;
+    }
+    a{
+        font-size:0.16rem;
     }
 </style>

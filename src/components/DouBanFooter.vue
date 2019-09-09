@@ -37,6 +37,7 @@ export default {
     }
     a{
         color:green;
+        font-size:0.16rem;
     }
     .footer{
         text-align:center;

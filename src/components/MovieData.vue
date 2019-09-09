@@ -9,7 +9,7 @@
           <li v-for="(v,index) in arrfirst" :key="index">
             <router-link to="/moviedetail"><img :src="v.images.large"></router-link>
             <!-- <router-link to="/moviedetail"><img :src="v.large"></router-link> -->
-            <router-link to="/moviedetail"><span>{{v.title}}</span></router-link>
+            <router-link class="qq" to="/moviedetail"><span>{{v.title}}</span></router-link>
             <el-rate
                 v-model="value5"
                 disabled
@@ -134,50 +134,41 @@ export default {
   }
 }
 </script>
-<style lang="" scoped>
-.fir{
-  /* width:100%;
-  overflow:auto; */
+<style scoped>
+.fir,.sec,.thi{
   margin-top:0.2rem;
 }
-.sec{
-  /* width:100%;
-  overflow:auto; */
-  margin-top:0.2rem;
-}
-.thi{
-  /* width:100%;
-  overflow:auto; */
-  margin-top:0.2rem;
-}
-  .tit{
+.tit{
     display:flex;
     justify-content: space-between;
+    font-size:0.16rem;
   }
-  i{
+i{
     font-style:normal;
     color:green;
   }
-  ul{
+ul{
   display:flex;
   overflow:scroll;
   width:100%;
+  font-size: 0px;
   }
-  li{
+li{
     list-style:none;
     width:1rem;
     margin-right:0.1rem;
   }
-  img{
+img{
     width:1rem;
     height:1.5rem;
     margin-right:0.1rem;
     display:block;
   }
-  span{
+span{
     display:block;
     text-align:center;
     margin-top:0.1rem;
+    font-size:0.16rem;
   }
   .star{
     font-size:10px;
@@ -185,9 +176,5 @@ export default {
   }
   a{
     color:black;
-  }
-  .el-rate__icon el-icon-star-on{
-    /* font-size:0; */
-    margin-right:0;
   }
 </style>
